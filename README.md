@@ -2,6 +2,8 @@
 
 This is a simple web-based Speech to Text Converter built using JavaScript and the Web Speech API. It allows users to transcribe speech in real time, select different recognition languages, and download or copy their transcriptions.
 
+![Speach to text converter](speach-to-text.png)
+
 ## 🌟 Features
 
 - 🎙️ Start/Stop voice recognition
