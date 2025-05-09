@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 1em;
+  background-color: rgb(233, 233, 233);
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  border: 1.5px solid darkblue;
+  border-radius: 8px;
+}
+
+header {
+  text-align: center;
+  color: darkblue;
+  font-family: "Lilita One", sans-serif;
+}
+
+.language-choice {
+  padding: .5em;
+}
+
+.language-choice select {
+  padding: 5px;
+}
+
+#status-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+#status-text.listening {
+  color: darkblue;
+  font-weight: bold;
+  font-family: "Charm", cursive;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+}
+
+hr {
+  border: 1px solid darkblue;
+}
+
+.transcript {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 1.5px solid darkblue;
+  padding: 1em;
+  margin-bottom: 30px;
+  background: rgb(233, 233, 233);
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  outline: none;
+  min-height: 200px;
+  font-family: "Charm", cursive;
+  font-weight: 500;
+}
+
+.count {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1em;
+  color: #fff0f0;
+  border-radius: 5px;
+  background-color: darkblue;
+  font-family: "Merienda", cursive;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+button {
+  font-size: 1.2rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(111, 109, 112);
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+button:hover i {
+  scale: 0.7;
+  transition: 0.3s ease-in-out;
+}
+
+.record-btn.active {
+  background-color: darkblue;
+  animation: live 0.6s infinite alternate;
+  box-shadow: 1px 0 4px darkblue;
+}
+
+.button-container i {
+  pointer-events: none;
+}
+
+button:nth-child(3) {
+  scale: 1.1;
+  background-color: rgb(43, 42, 42);
+}
+
+
+@keyframes live {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 600px) {
+  .count {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
