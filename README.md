@@ -2,7 +2,15 @@
 
 This is a simple web-based Speech to Text Converter built using JavaScript and the Web Speech API. It allows users to transcribe speech in real time, select different recognition languages, and download or copy their transcriptions.
 
+---
+## ✨ Demo
+Want to try it out? Visit [Live Demo](https://paulmagadi.github.io/speech-to-text-converter)
+
+---
+
 ![Speach to text converter](speach-to-text.png)
+
+---
 
 ## 🌟 Features
 
@@ -14,6 +22,8 @@ This is a simple web-based Speech to Text Converter built using JavaScript and t
 - 🔢 Real-time word, character count, and estimated reading time
 - 💡 Persists selected language using `localStorage`
 - 📌 Displays active recognition language
+
+---
 
 ## 🚀 Getting Started
 
@@ -32,6 +42,8 @@ This is a simple web-based Speech to Text Converter built using JavaScript and t
 
 Open index.html in your browser:
 
+---
+
 ## 📁 Project Structure
 
 ```
@@ -42,6 +54,7 @@ speech-to-text-converter/
 ├── script.js          # Main JavaScript logic
 └── README.md          # Project documentation
 ```
+---
 
 ## 🧪 Browser Support
 This app uses **webkitSpeechRecognition**, which is supported in:
@@ -52,10 +65,12 @@ This app uses **webkitSpeechRecognition**, which is supported in:
 
 **⚠️ Not supported in Firefox, Safari, or mobile browsers.**
 
+---
+
 ## 📜 License
 This project is open source and available under the MIT License.
 
-## ✨ Demo
-Want to try it out? Visit [Live Demo](https://paulmagadi.github.io/speech-to-text-converter)
+---
 
-## Built with 💻 + 🎤 by *Paul Magadi*
+## Built with 💻 + 🎤 by: 
+**Paul Magadi**
